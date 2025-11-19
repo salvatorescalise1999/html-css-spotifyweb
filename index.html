@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MySpostify</title>
+    <title>MySpotify</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Rocker&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -22,28 +25,32 @@
             <img src="img/logo.svg" alt="logo-spotify">
 
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Cerca</a></li>
-                <li><a href="">La tua libreria</a></li>
-                
+                <div class="home">
+                    <li class="border-botton-green"></li><a href="" class="white"><i
+                            class="fa-solid fa-house"></i>Home</a>
+                </div>
+
+                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i>Cerca</a></li>
+                <li><a href=""><i class="fa-solid fa-lines-leaning"></i>La tua libreria</a></li>
+
             </ul>
 
-            <ul>
-                <li><a href="">PLAYIST</a></li>
-                <li><a href="">Crea Playist</a></li>
-                <li><a href="">Nome Playist</a></li>
-                <li><a href="">Nome Playist</a></li>
-                <li><a href="">Nome Playist</a></li>
-                <li><a href="">Nome Playist</a></li>
-                <li><a href="">Nome Playist</a></li>
-                <li><a href="">Nome Playist</a></li>
-                <li><a href="">Nome Playist</a></li>
+            <ul class="playlist">
+                <li><a href="" class="white">PLAYLIST</a></li>
+                <li><a href=""><i class="fa-solid fa-plus "></i>Crea Playlist</a></li>
+                <li><a href="">Nome Playlist</a></li>
+                <li><a href="">Nome Playlist</a></li>
+                <li><a href="">Nome Playlist</a></li>
+                <li><a href="">Nome Playlist</a></li>
+                <li><a href="">Nome Playlist</a></li>
+                <li><a href="">Nome Playlist</a></li>
+                <li><a href="">Nome Playlist</a></li>
             </ul>
 
-            <a href="" class="installa-app">Installa app</a>
-            <p><a href="" class="john-doe">John Doe</a></p>
-            
-            
+            <a href="" class="installa-app"><i class="fa-regular fa-circle-down font-size-icon-small"></i>Installa
+                app</a>
+            <a href="" class="john-doe "><i class="fa-solid fa-circle-user"></i><strong class="white">John
+                    Doe</strong></a>
 
         </section>
 
@@ -366,6 +373,52 @@
     </main>
 
     <footer>
+        <div class="left-footer-content">
+            <img src="img/sinister.jpeg" alt="">
+            <div>
+                <p class="white">Sinister</p>
+                <p class="sottolineatura">Brano nome</p>
+            </div>
+            <i class="fa-regular fa-heart font-size-icon-small"></i>
+            <i class="fa-regular fa-folder font-size-icon-small"></i>
+
+        </div>
+        <div class="center-footer-content">
+
+            <div class="icon-play-music">
+                <i class="fa-solid fa-shuffle white font-size-icon-small"></i>
+                <i class="fa-solid fa-backward-step white font-size-icon-small"></i>
+                <i class="fa-regular fa-circle-play white font-size-icon-big"></i>
+                <i class="fa-solid fa-forward-step white font-size-icon-small"></i>
+                <i class="fa-solid fa-rotate-right white font-size-icon-small"></i>
+            </div>
+
+            <div class="flex-center-footer-content">
+
+                <p class="white">0:25</p>
+
+                <div class="barra-tempo-musica">
+
+                    <div class="barra-avanzamento-musica" style="width: 25%;"></div>
+
+                </div>
+                <p class="white">4:35</p>
+
+            </div>
+
+        </div>
+        <div class="right-footer-content">
+
+            <i class="fa-solid fa-bars white font-size-icon-small"></i>
+            <i class="fa-solid fa-display white font-size-icon-small"></i>
+            <i class="fa-solid fa-volume-high white font-size-icon-small"></i>
+            <div class="barra-tempo-volume">
+
+                <div class="barra-avanzamento-volume" style="width: 25%;"></div>
+
+            </div>
+
+        </div>
 
     </footer>
 
