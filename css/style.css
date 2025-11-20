@@ -185,21 +185,16 @@ li {
 
 .card {
     width: calc((100% - (16px * 5)) / 6);
-
 }
 
 .card-image {
     position: relative;
-    overflow: hidden;
 }
 
 .card-image img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover;
     cursor: pointer;
- 
-   
 }
 
 .card-image i {
@@ -212,10 +207,7 @@ li {
     opacity: 0;
     /* invisibile all’inizio */
     transition: opacity 0.2s ease;
-    z-index:10;  /* importantissimo */
     pointer-events: none;
-    
-    
 }
 
 /* quando passo con il mouse appare */
