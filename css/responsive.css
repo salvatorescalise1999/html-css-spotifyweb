@@ -10,7 +10,7 @@
         width: calc((100% - (16px * 3)) / 4);
     }
 
-    .logo-responsive{
+    .logo-responsive {
         display: none;
     }
 
@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 768px) {
 
-    .logo-responsive{
+    .logo-responsive {
         display: none;
     }
 
@@ -36,13 +36,16 @@
         width: calc((100% - 16px) / 2);
     }
 
+    .left-footer-content div {
+        margin-right: 0;
+    }
+
 }
 
 /* RESPONSIVE MOBILE PICCOLO */
 
 @media screen and (max-width: 480px) {
 
-     /* SIDEBAR MOBILE */
     .nav-bar-left {
         width: 80px;
         padding-left: 0;
@@ -53,8 +56,8 @@
         display: none;
     }
 
-    /* LOGO stile icona */
     .nav-bar-left img {
+        display: block;
         width: 28px;
         height: auto;
         margin: 20px 0;
@@ -64,7 +67,6 @@
     /* Nascondi testi dei link */
     .nav-bar-left a {
         font-size: 0;
-        /* nasconde il testo */
         padding: 0;
     }
 
@@ -72,22 +74,10 @@
     .nav-bar-left a i {
         font-size: 22px;
         margin: 0;
-    }
-
-    /* Allinea verticalmente le icone */
-    .nav-bar-left li {
-        display: flex;
-        justify-content: center;
         padding: 12px 0;
     }
 
     .playlist {
-        display: none;
-    }
-
-
-    /* PLAYLIST nascoste completamente */
-    .playlist-wrapper {
         display: none;
     }
 
@@ -118,8 +108,61 @@
         font-size: 26px;
     }
 
-    .libreria{
+    .libreria {
         width: calc(100vh - 80px);
     }
-}
 
+
+    /********************** FOOTER ***********************/
+
+    /***** LEFT FOOTER *****/
+    .left-footer-content {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .left-footer-content div {
+        margin-right: 0;
+    }
+
+    .left-footer-icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+    }
+
+
+     /***** CENTER FOOTER *****/
+    .center-footer-content {
+        width: 35%;
+    }
+
+    .icon-play-music {
+        gap: 12px;
+    }
+
+    .flex-center-footer-content p {
+        font-size: 10px;
+    }
+
+    .icon-play-music i {
+        font-size: 14px !important;
+    }
+
+    .fa-circle-play {
+        font-size: 22px !important;
+    }
+
+    .barra-tempo-musica {
+        margin: 5%;
+    }
+
+     /***** RIGHT FOOTER *****/
+    .right-footer-content {
+        width: 30%;
+    }
+
+}

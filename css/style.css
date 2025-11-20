@@ -76,7 +76,7 @@ li {
     padding-left: 20px;
 }
 
-.loogo-responsive{
+.logo-responsive {
     display: none;
 }
 
@@ -87,11 +87,30 @@ li {
     margin-right: 30px;
 }
 
+.home {
+    position: relative;
+
+}
+
+.home::after {
+    content: "";
+    /* inserire un contenuto nullo, invisibile all'utente, all'interno di uno pseudo-elemento (come ::before o ::after). 
+Sebbene non aggiunga testo visibile, assicura che lo pseudo-elemento venga effettivamente renderizzato dal browser e che sia quindi possibile applicare ad esso altre regole CSS.  */
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* sposta un elemento dalla sua posizione originale senza influenzare il layout degli altri elementi circostanti. */
+    width: 4px;
+    height: 22px;
+    background-color: #1db954;
+    border-radius: 2px;
+}
+
 .playlist-wrapper {
     flex: 1;
     /* occupa tutto lo spazio disponibile */
     overflow-y: scroll;
-    /* scrollbar sempre visibile */
     min-height: 0;
     /* fondamentale per far funzionare lo scroll */
 }
@@ -102,7 +121,6 @@ li {
 
 .playlist-wrapper::-webkit-scrollbar-thumb {
     background: green;
-    /* colore barra */
     border-radius: 10px;
 }
 
@@ -140,7 +158,6 @@ li {
     width: calc(100% - 200px);
     background-color: #141922;
     overflow: auto;
-
 }
 
 .header-libreria {
@@ -155,7 +172,6 @@ li {
 }
 
 .effettua-upgrade {
-    /* padding: 10px 30px 10px 30px;*/
     padding: 10px;
     padding-left: 25px;
     padding-right: 25px;
@@ -198,6 +214,7 @@ li {
 
 .border-bottom-green {
     border-bottom: 2px solid green;
+    padding-bottom: 10px;
 }
 
 .recently-played {
@@ -238,7 +255,6 @@ li {
     pointer-events: none;
 }
 
-/* quando passo con il mouse appare */
 .card-image:hover i {
     opacity: 1;
 }
@@ -295,7 +311,7 @@ footer {
 
 /**************************** FOOTER LEFT *******************************/
 .left-footer-content img {
-    width: 25%;
+    width: 45px;
 }
 
 .left-footer-content {
@@ -387,11 +403,8 @@ footer {
 
 .barra-tempo-volume {
     width: 50%;
-    /* larghezza della barra */
     height: 5px;
-    /* spessore linea */
     background-color: #4f4f4f;
-    /* grigio scuro */
     border-radius: 2px;
     overflow: hidden;
     /* serve per tagliare l’interno */
@@ -400,8 +413,6 @@ footer {
 .barra-avanzamento-volume {
     height: 100%;
     background-color: gray;
-    /* #1db954 */
-    /* verde Spotify */
     border-radius: 2px;
     cursor: pointer;
 }
