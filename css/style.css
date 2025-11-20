@@ -76,6 +76,10 @@ li {
     padding-left: 20px;
 }
 
+.loogo-responsive{
+    display: none;
+}
+
 .nav-bar-left img {
     padding-top: 10px;
     height: 7%;
