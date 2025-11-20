@@ -1,0 +1,54 @@
+
+/* RESPONSIVE TABLET */
+
+@media screen and (min-width: 769px) and (max-width:1024px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+/* RESPONSIVE MOBILE STANDARD */
+
+@media screen and (max-width: 768px){
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+/* RESPONSIVE MOBILE PICCOLO */
+
+@media screen and (max-width: 480px){
+    
+}
