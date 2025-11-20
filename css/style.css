@@ -59,6 +59,10 @@ li {
     font-size: 35px;
 }
 
+.padding-bottom {
+    padding-bottom: 20px;
+}
+
 
 /**************************** NAV BAR LEFT *******************************/
 .nav-bar-left {
@@ -154,15 +158,10 @@ li {
 }
 
 .menu-libreria {
-    width: 50%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     padding-bottom: 10px;
-}
-
-.padding-bottom {
-    padding-bottom: 10px;
+    gap: 16px;
 }
 
 .border-bottom-green {
@@ -178,13 +177,11 @@ li {
     display: flex;
     flex-direction: row;
     gap: 16px;
-
 }
 
 .card {
     width: calc((100% - (16px * 5)) / 6);
 }
-
 
 .card img{
     max-width: 100%;
@@ -195,25 +192,28 @@ figcaption{
     display: flex;
     justify-content: center;
     margin: 10px;
+    text-align: center;
 }
 
 figcaption .white{
     font-size: 19px;
 }
 
-.creato-per-john-doe{
+.creato-per-john-doe, .artisti-piu-popolari{
     margin-top: 30px;
-  
-
 }
 
-.content-creato-per-john-doe{
+.content-creato-per-john-doe, .content-artisti-piu-popolari{
     margin-top: 40px;
     display: flex;
     flex-direction: row;
     gap: 16px;
-
 }
+
+.img-radius{
+    border-radius: 100%;
+}
+
 
 /**************************** FOOTER *******************************/
 footer {
@@ -230,7 +230,6 @@ footer {
     align-items: center;
     /* Allinea verticalmente gli elementi al centro */
     padding: 10px;
-
 }
 
 /**************************** FOOTER LEFT *******************************/
@@ -261,7 +260,6 @@ footer {
 .fa-heart:hover {
     color: white;
     cursor: pointer;
-
 }
 
 .fa-folder:hover {
@@ -282,13 +280,11 @@ footer {
     gap: 20px;
     margin-bottom: 15px;
     cursor: pointer;
-
 }
 
 .fa-circle-play:hover {
     font-size: 40px;
     margin-bottom: none;
-
 }
 
 .flex-center-footer-content {
@@ -296,8 +292,6 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
-
 }
 
 .barra-tempo-musica {
@@ -310,8 +304,6 @@ footer {
     border-radius: 2px;
     overflow: hidden;
     /* serve per tagliare l’interno */
-
-
 }
 
 .barra-avanzamento-musica {
@@ -335,7 +327,6 @@ footer {
     gap: 10px;
     align-items: center;
     justify-content: center;
-
 }
 
 .barra-tempo-volume {
@@ -348,7 +339,6 @@ footer {
     border-radius: 2px;
     overflow: hidden;
     /* serve per tagliare l’interno */
-
 }
 
 .barra-avanzamento-volume {
@@ -362,5 +352,4 @@ footer {
 
 .barra-avanzamento-volume:hover {
     background-color: #1db954;
-
 }
